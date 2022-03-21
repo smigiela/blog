@@ -1,7 +1,21 @@
 {
-    "The :attribute must contain at least one letter.": "The :attribute must contain at least one letter.",
-    "The :attribute must contain at least one number.": "The :attribute must contain at least one number.",
-    "The :attribute must contain at least one symbol.": "The :attribute must contain at least one symbol.",
-    "The :attribute must contain at least one uppercase and one lowercase letter.": "The :attribute must contain at least one uppercase and one lowercase letter.",
-    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "The given :attribute has appeared in a data leak. Please choose a different :attribute."
+    "The :attribute must contain at least one letter.": "Pole :attribute musi zawierać co najmniej jedną liczbę.",
+    "The :attribute must contain at least one number.": "Pole :attribute musi zawierać co najmniej jedną lite©.",
+    "The :attribute must contain at least one symbol.": "Pole :attribute musi zawierać co najmniej jeden znak specjalny.",
+    "The :attribute must contain at least one uppercase and one lowercase letter.": "Pole :attribute musi zawierać co najmniej jedną wielką i jedną małą literę.",
+    "The given :attribute has appeared in a data leak. Please choose a different :attribute.": "Podany :attribute pojawił się w wycieku danych. Wybierz inny :attribute.",
+
+    "Home page": "Strona domowa",
+    "Dashboard": "Panel",
+    "User": "Użytkownik",
+    "Users": "Użytkownicy",
+    "About us": "O nas",
+    "Two-level menu": "Menu dwupoziomowe",
+
+    "Log Out": "Wyloguj",
+    "My Profile": "Profil",
+
+    "Sample static text page": "Przykładowy tekst",
+
+    "You are logged in!": "Jesteś zalogowany!"
 }
