@@ -13,9 +13,13 @@
     "Two-level menu": "Menu dwupoziomowe",
 
     "Log Out": "Wyloguj",
-    "My Profile": "Profil",
+    "My Profile": "Mój profil",
 
     "Sample static text page": "Przykładowy tekst",
 
-    "You are logged in!": "Jesteś zalogowany!"
+    "You are logged in!": "Jesteś zalogowany!",
+
+    "Name": "Nazwa",
+
+    "Submit": "Zapisz"
 }

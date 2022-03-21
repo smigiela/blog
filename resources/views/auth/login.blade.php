@@ -5,14 +5,14 @@
             <div class="col-12 d-flex align-items-center justify-content-center">
                 <div class="bg-white shadow-soft border rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                     <div class="text-center text-md-center mb-4 mt-md-0">
-                        <h1 class="mb-3 h3">{{ __('Welcome back') }}</h1>
+                        <h1 class="mb-3 h3">{{ __('auth.login_page.welcome_back') }}</h1>
                     </div>
 
                     <form class="mt-4" action="{{ route('login') }}" method="POST">
                         @csrf
                         <!-- Form -->
                         <div class="form-group mb-4">
-                            <label for="email">{{ __('Your Email') }}</label>
+                            <label for="email">{{ __('auth.login_page.your_email') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">
                                     <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -23,7 +23,7 @@
                                         </path>
                                     </svg>
                                 </span>
-                                <input name="email" type="email" class="form-control" placeholder="{{ __('Email') }}"
+                                <input name="email" type="email" class="form-control" placeholder="{{ __('auth.login_page.your_email_placeholder') }}"
                                     id="email" value="{{ old('email') }}" required autofocus>
                             </div>
                             @error('email')
@@ -34,7 +34,7 @@
                         <div class="form-group">
                             <!-- Form -->
                             <div class="form-group mb-4">
-                                <label for="password">{{ __('Your Password') }}</label>
+                                <label for="password">{{ __('auth.login_page.your_password') }}</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon2">
                                         <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -45,7 +45,7 @@
                                             </path>
                                         </svg>
                                     </span>
-                                    <input name="password" type="password" placeholder="{{ __('Password') }}"
+                                    <input name="password" type="password" placeholder="{{ __('auth.login_page.your_password_placeholder') }}"
                                         class="form-control" id="password" required>
                                 </div>
                                 @error('password')
@@ -57,25 +57,25 @@
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="remember" id="remember">
                                     <label class="form-check-label mb-0" for="remember">
-                                        {{ __('Remember me') }}
+                                        {{ __('auth.login_page.remember_me') }}
                                     </label>
                                 </div>
                                 <div>
                                     <a href="{{ route('password.request') }}" class="small text-right">
-                                        {{ __('Lost password?') }}
+                                        {{ __('auth.login_page.lost_password') }}
                                     </a>
                                 </div>
                             </div>
                         </div>
 
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-gray-800">{{ __('Sign in') }}</button>
+                            <button type="submit" class="btn btn-gray-800">{{ __('auth.login_page.sign_in') }}</button>
                         </div>
                     </form>
                     <div class="d-flex justify-content-center align-items-center mt-4">
                         <span class="fw-normal">
-                            {{ __('Not registered?') }}
-                            <a href="{{ route('register') }}" class="fw-bold">{{ __('Create account') }}</a>
+                            {{ __('auth.login_page.not_registered') }}
+                            <a href="{{ route('register') }}" class="fw-bold">{{ __('auth.login_page.create_account') }}</a>
                         </span>
                     </div>
                 </div>

@@ -5,26 +5,26 @@
         <div class="row">
             <div class="col-12 col-xl-12">
                 <div class="card card-body border-0 shadow mb-4">
-                    <h2 class="h5 mb-4">{{ __('My profile') }}</h2>
+                    <h2 class="h5 mb-4">{{ __('auth.profile.my_profile') }}</h2>
                     <form action="{{ route('profile.update') }}" method="POST">
                         @csrf
                         @method('PUT')
 
                         <div class="row align-items-center">
                             <div class="col-md-6 mb-3">
-                                <label for="name">{{ 'Your Name' }}</label>
+                                <label for="name">{{ __('auth.profile.your_name') }}</label>
                                 <div class="input-group">
                                     <span class="input-group-text">
                                         <i class="fas fa-user-alt fa-fw"></i>
                                     </span>
                                     <input id="name" class="form-control" type="text" name="name"
-                                        placeholder="{{ __('Name') }}" value="{{ old('name', auth()->user()->name) }}"
+                                        placeholder="{{ __('auth.profile.your_name') }}" value="{{ old('name', auth()->user()->name) }}"
                                         required>
                                 </div>
                                 @error('name') <div class="invalid-feedback"> {{ $message }} </div> @enderror
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="email">{{ __('Your Email') }}</label>
+                                <label for="email">{{ __('auth.profile.your_email') }}</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon1">
                                         <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -37,7 +37,7 @@
                                         </svg>
                                     </span>
                                     <input type="email" name="email" class="form-control"
-                                        placeholder="{{ __('Email') }}" id="email"
+                                        placeholder="{{ __('auth.profile.your_email') }}" id="email"
                                         value="{{ old('email', auth()->user()->email) }}" required>
                                 </div>
                                 @error('email') <div class="invalid-feedback"> {{ $message }} </div> @enderror
@@ -45,7 +45,7 @@
                         </div>
                         <div class="row align-items-center">
                             <div class="col-md-6 mb-3">
-                                <label for="password">{{ __('New Password') }}</label>
+                                <label for="password">{{ __('auth.profile.new_password') }}</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon2">
                                         <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -57,13 +57,13 @@
                                         </svg>
 
                                     </span>
-                                    <input type="password" name="password" placeholder="{{ __('New Password') }}"
+                                    <input type="password" name="password" placeholder="{{ __('auth.profile.new_password_placeholder') }}"
                                         class="form-control" id="password">
                                 </div>
                                 @error('password') <div class="invalid-feedback"> {{ $message }} </div> @enderror
                             </div>
                             <div class="col-md-6 mb-3">
-                                <label for="password_confirmation">{{ __('Confirm Password') }}</label>
+                                <label for="password_confirmation">{{ __('auth.profile.confirm_password') }}</label>
                                 <div class="input-group">
                                     <span class="input-group-text" id="basic-addon3">
                                         <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -76,7 +76,7 @@
 
                                     </span>
                                     <input type="password" name="password_confirmation" class="form-control"
-                                        id="password_confirmation" placeholder="{{ __('New password confirmation') }}"
+                                        id="password_confirmation" placeholder="{{ __('auth.profile.new_password_placeholder') }}"
                                         autocomplete="new-password">
                                 </div>
                             </div>

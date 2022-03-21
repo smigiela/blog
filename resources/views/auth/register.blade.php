@@ -6,20 +6,21 @@
             <div class="col-12 d-flex align-items-center justify-content-center">
                 <div class="bg-white shadow border-0 rounded border-light p-4 p-lg-5 w-100 fmxw-500">
                     <div class="text-center text-md-center mb-4 mt-md-0">
-                        <h1 class="mt-n3 mb-0 h3">{{ __('Create Account') }}</h1>
+                        <h1 class="mt-n3 mb-0 h3">{{ __('auth.register_page.create_account') }}</h1>
                     </div>
                     <form method="POST" action="{{ route('register') }}">
                         @csrf
-                        
+
                         <!-- Form -->
                         <div class="form-group mt-4 mb-4">
-                            <label for="name">{{ __('Your Name') }}</label>
+                            <label for="name">{{ __('auth.register_page.your_name') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">
                                     <i class="fas fa-user-alt fa-fw"></i>
                                 </span>
                                 <input name="name" id="name" type="name" class="form-control"
-                                    placeholder="{{ __('Name') }}" value="{{ old('name') }}" autofocus required>
+                                    placeholder="{{ __('auth.register_page.your_name_placeholder') }}"
+                                    value="{{ old('name') }}" autofocus required>
                             </div>
 
                             @error('name') <div class="invalid-feedback"> {{ $message }} </div> @enderror
@@ -28,7 +29,7 @@
 
                         <!-- Form -->
                         <div class="form-group mt-4 mb-4">
-                            <label for="email">{{ __('Your Email') }}</label>
+                            <label for="email">{{ __('auth.register_page.your_email') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon1">
                                     <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -40,14 +41,15 @@
                                     </svg>
                                 </span>
                                 <input name="email" id="email" type="email" class="form-control"
-                                    placeholder="{{ __('Email') }}" value="{{ old('email') }}" autofocus required>
+                                    placeholder="{{ __('auth.register_page.your_email_placeholder') }}"
+                                    value="{{ old('email') }}" autofocus required>
                             </div>
                             @error('email') <div class="invalid-feedback"> {{ $message }} </div> @enderror
                         </div>
                         <!-- End of Form -->
                         <!-- Form -->
                         <div class="form-group mb-4">
-                            <label for="password">{{ __('Your Password') }}</label>
+                            <label for="password">{{ __('auth.register_page.password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon2">
                                     <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -58,7 +60,9 @@
                                         </path>
                                     </svg>
                                 </span>
-                                <input name="password" type="password" placeholder="{{ __('Password') }}" class="form-control" id="password"
+                                <input name="password" type="password"
+                                    placeholder="{{ __('auth.register_page.password_placeholder') }}"
+                                    class="form-control" id="password"
                                     required autocomplete="new-password">
                             </div>
                             @error('password') <div class="invalid-feedback"> {{ $message }} </div>
@@ -67,7 +71,7 @@
                         <!-- End of Form -->
                         <!-- Form -->
                         <div class="form-group mb-4">
-                            <label for="password_confirmation">{{ __('Confirm Password') }}</label>
+                            <label for="password_confirmation">{{ __('auth.register_page.confirm_password') }}</label>
                             <div class="input-group">
                                 <span class="input-group-text" id="basic-addon3">
                                     <svg class="icon icon-xs text-gray-600" fill="currentColor" viewBox="0 0 20 20"
@@ -78,20 +82,21 @@
                                         </path>
                                     </svg>
                                 </span>
-                                <input name="password_confirmation" type="password" placeholder="{{ __('Confirm Password') }}"
+                                <input name="password_confirmation" type="password"
+                                    placeholder="{{ __('auth.register_page.confirm_password_placeholder') }}"
                                     class="form-control" id="password_confirmation" required>
                             </div>
                         </div>
                         <!-- End of Form -->
                         <div class="d-grid">
-                            <button type="submit" class="btn btn-gray-800">{{ __('Register') }}</button>
+                            <button type="submit" class="btn btn-gray-800">{{ __('auth.register_page.register') }}</button>
                         </div>
                     </form>
 
                     <div class="d-flex justify-content-center align-items-center mt-4">
                         <span class="fw-normal">
-                            {{ __('Already have an account?') }}
-                            <a href="{{ route('login') }}" class="fw-bold">{{ __('Login here') }}</a>
+                            {{ __('auth.register_page.have_account') }}
+                            <a href="{{ route('login') }}" class="fw-bold">{{ __('auth.register_page.login_hear') }}</a>
                         </span>
                     </div>
                 </div>
