@@ -5,11 +5,11 @@
                 <img src="{{ asset('images/brand/light.svg') }}" height="20" width="20" alt="Volt Logo">
             </span>
             <span class="mt-1 ms-1 sidebar-text">
-                Volt Laravel
+                {{ __("Home page") }}
             </span>
         </a>
     </li>
-
+    <hr>
     <li class="nav-item {{ request()->routeIs('home') ? 'active' : '' }}">
         <a href="{{ route('home') }}" class="nav-link">
             <span class="sidebar-icon">
@@ -52,7 +52,7 @@
                 <span class="sidebar-icon me-3">
                     <i class="fas fa-circle fa-fw"></i>
                 </span>
-                <span class="sidebar-text">Two-level menu</span>
+                <span class="sidebar-text">{{ __('Two-level menu')}}</span>
             </span>
             <span class="link-arrow">
                 <svg class="icon icon-sm" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">

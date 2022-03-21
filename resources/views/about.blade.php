@@ -8,7 +8,7 @@
                     <div class="card border-0 shadow">
                         <div class="card-body">
                             <h2 class="fs-5 fw-bold mb-1">{{ __('About us') }}</h2>
-                            <p>{{ __('Sample static text page ') }}</p>
+                            <p>{{ __('Sample static text page') }}</p>
                         </div>
                     </div>
                 </div>

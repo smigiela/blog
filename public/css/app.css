@@ -27219,9 +27219,6 @@ textarea.form-control-lg {
     max-width: 260px;
   }
 }
-.sidebar .nav {
-  white-space: nowrap;
-}
 .sidebar .nav-item {
   margin-bottom: 0.2rem;
 }

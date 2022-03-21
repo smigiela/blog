@@ -7,7 +7,8 @@
         </div>
         <div class="d-block">
             <h2 class="h5 mb-3">Hi, {{ auth()->user()->name }}</h2>
-            <a class="btn btn-secondary btn-sm d-inline-flex align-items-center" href="{{ route('logout') }}" onclick="event.preventDefault();
+            <a class="btn btn-secondary btn-sm d-inline-flex align-items-center" href="{{ route('logout') }}"
+                    onclick="event.preventDefault();
                     document.getElementById('logout-form').submit();">
                 <form method="POST" id="logout-form" action="{{ route('logout') }}">
                     @csrf
