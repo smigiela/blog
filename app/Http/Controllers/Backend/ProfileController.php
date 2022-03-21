@@ -1,9 +1,13 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace App\Http\Controllers\Backend;
 
-use Illuminate\Support\Facades\Hash;
+use App\Http\Controllers\Controller;
 use App\Http\Requests\ProfileUpdateRequest;
+use Illuminate\Support\Facades\Hash;
+//use function auth;
+//use function redirect;
+//use function view;
 
 class ProfileController extends Controller
 {
